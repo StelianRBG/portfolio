@@ -10,6 +10,70 @@ body {
 	overflow: hidden;
 }
 
+h1 {
+	font-family: 'Press Start 2P', cursive;
+ 	font-size: 25px;
+ 	animation: 6s rgbA infinite;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+p {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.colection {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.colection a {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.colection a:hover {
+	opacity: 0.7;
+}
+
+.colection img {
+	width: 20%;
+	height: 250px;
+}
+
+/* animations */
+@keyframes fadeOut {
+  0%   { opacity:1; }
+  100% { opacity:0; z-index: 0; }
+}
+
+@keyframes spin {
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+	0%   { opacity:0; }
+  	100% { opacity:1; }
+}
+
+@keyframes rgbA {
+	0%   { text-shadow: 0px 0px 20px #9400D3; }
+	20%  { text-shadow: 0px 0px 20px #0000FF; }
+	40%  { text-shadow: 0px 0px 20px #00FF00; }
+	60%  { text-shadow: 0px 0px 20px #FFFF00; }
+	80%  { text-shadow: 0px 0px 20px #FF7F00; }
+	100% { text-shadow: 0px 0px 20px #FF0000; }
+}
+
+/* loading */
 .loader {
 	position: absolute;
 	background: #121212;
@@ -20,11 +84,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-@keyframes fadeOut {
-  0%   { opacity:1; }
-  100% { opacity:0; z-index: 0; }
 }
 
 .loader h1{
@@ -41,10 +100,7 @@ body {
 	animation: spin 1.5s linear;
 }
 
-@keyframes spin {
-	100% { transform: rotate(360deg); }
-}
-
+/* menue */
 
 .sidebar {
 	width: 15%;
@@ -61,7 +117,6 @@ body {
 }
 
 .sidebar h1 {
- 	font-family: 'Press Start 2P', cursive;
  	font-size: 15px;
  	animation: none;
 }
@@ -117,28 +172,7 @@ body {
 	animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
-	0%   { opacity:0; }
-  	100% { opacity:1; }
-}
-
-h1 {
-	font-family: 'Press Start 2P', cursive;
- 	font-size: 25px;
- 	animation: 6s rgbA infinite;
-}
 /* home */
-
-
-@keyframes rgbA {
-	0%   { text-shadow: 0px 0px 20px #9400D3; }
-	20%  { text-shadow: 0px 0px 20px #0000FF; }
-	40%  { text-shadow: 0px 0px 20px #00FF00; }
-	60%  { text-shadow: 0px 0px 20px #FFFF00; }
-	80%  { text-shadow: 0px 0px 20px #FF7F00; }
-	100% { text-shadow: 0px 0px 20px #FF0000; }
-}
-
 #home {
 	height: 60%;
 }
@@ -150,40 +184,13 @@ h1 {
 	border: 2px solid white;
 }
 
-.colection {
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.colection a {
-	padding: 20px;
-	font-size: 30px;
-	width: 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
-}
-
-.colection a:hover {
-	opacity: 0.7;
-}
-
 /* who am i */
 #who {
 	height: 30%;
 }
 
-#who p {
-	font-family: 'Source Code Pro', monospace;
-}
 
 /*skills*/
-#skills h2 {
-	font-size: 30px;
-}
-
 .skill {
 	border-radius: 15px;
   text-align: center;
@@ -207,9 +214,6 @@ h1 {
 /* xp */
 #xp {
 	height: 90%;
-}
-#xp h2 {
-	font-size: 30px;
 }
 
 #xp table {
@@ -242,15 +246,21 @@ h1 {
 .achivement {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-.achivement p {
+.achivement img {
+	width: 500px;
+	border-radius: 10%;
+}
+
+/* about me */
+#about ul {
+	align-self: flex-start;
+	font-size: 15px;
 	font-family: 'Source Code Pro', monospace;
 }
 
-.achivement img{
-	width: 400px;
+#about ul li {
+	padding: 10px;
 }
-
-
