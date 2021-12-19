@@ -4,9 +4,10 @@ body {
 	padding: 0;
 	background: linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)), url(https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg);
 	background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	overflow: hidden;
 }
 
 .loader {
@@ -61,7 +62,8 @@ body {
 
 .sidebar h1 {
  	font-family: 'Press Start 2P', cursive;
- 	font-size: 20px;
+ 	font-size: 15px;
+ 	animation: none;
 }
 
 .sidebar img {
@@ -120,11 +122,13 @@ body {
   	100% { opacity:1; }
 }
 
-#home h1 {
+h1 {
 	font-family: 'Press Start 2P', cursive;
  	font-size: 25px;
  	animation: 6s rgbA infinite;
 }
+/* home */
+
 
 @keyframes rgbA {
 	0%   { text-shadow: 0px 0px 20px #9400D3; }
@@ -146,13 +150,13 @@ body {
 	border: 2px solid white;
 }
 
-.socials {
+.colection {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.socials a {
+.colection a {
 	padding: 20px;
 	font-size: 30px;
 	width: 30px;
@@ -162,6 +166,45 @@ body {
 	border-radius: 50%;
 }
 
-.socials a:hover {
+.colection a:hover {
 	opacity: 0.7;
 }
+
+/* who am i */
+#who {
+	height: 30%;
+}
+
+#who p {
+	font-family: 'Source Code Pro', monospace;
+	align-self: flex-start;
+}
+
+/*skills*/
+#skills h2 {
+	font-size: 30px;
+}
+
+.skill {
+	border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+  margin: 4px;
+}
+
+.skill i {
+	 font-size: 40px;
+}
+
+.skill i:hover {
+	opacity: 0.7;
+}
+
+
+
+.skill h3 {
+	font-weight: 700!important;
+	font-family: 'Source Code Pro', monospace;
+}
+
+
